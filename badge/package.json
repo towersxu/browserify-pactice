@@ -1,0 +1,18 @@
+{
+  "name": "badge",
+  "version": "1.0.0",
+  "private": true,
+  "main": "badge.js",
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "brfs": "^1.1.1"
+  },
+  "devDependencies": {
+    "domify": "^1.4.0",
+    "insert-css": "^0.2.0"
+  }
+}
