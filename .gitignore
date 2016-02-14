@@ -2,4 +2,5 @@ node_modules/*
 !node_modules/through
 !node_modules/foo
 !node_modules/bar
+!node_modules/app-widget
 .idea

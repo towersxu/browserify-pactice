@@ -11,5 +11,8 @@
         "watch-budo-main": "node hmr/main.js"
     }
 ```
-watch-hmr/watch-budo 都可以实现浏览器的自动刷新
-watch-budo-browser/watch-budo-main：实现服务端和浏览器运行不同的js
+- watch-hmr/watch-budo 都可以实现浏览器的自动刷新
+- watch-budo-browser/watch-budo-main：实现服务端和浏览器运行不同的js
+
+###brfs
+将nodejs的文件读写在浏览器的环境下直接替换为文件内容。
