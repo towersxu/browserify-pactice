@@ -1,0 +1,26 @@
+{
+  "name": "browserufy-practice",
+  "version": "1.0.0",
+  "private": true,
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "brfs": "^1.1.1"
+  },
+  "devDependencies": {
+    "browserify-hmr": "^0.3.1",
+    "domify": "^1.4.0",
+    "insert-css": "^0.2.0"
+  },
+  "scripts": {
+    "build-main": "browserify foo/main.js -o foo/bundle.js",
+    "watch-main": "watchify foo/main.js -o foo/bundle.js --debug --verbose",
+    "beefy-main": "beefy main.js",
+    "watch-hmr": "watchify hmr/main.js -p browserify-hmr -o hmr/bundle.js -dv & ecstatic hmr -p 8000",
+    "watch-budo-browser": "watchify hmr -p browserify-hmr -o hmr/bundle.js -dv & budo hmr/browser.js -d hmr --live -p 8888",
+    "watch-budo-main": "node hmr/main.js"
+  }
+}
