@@ -16,3 +16,6 @@
 
 ###brfs
 将nodejs的文件读写在浏览器的环境下直接替换为文件内容。
+
+###widget
+browserify组件化示例
